@@ -1,0 +1,108 @@
+html,body {
+    display:table; 					/* today */
+    display:flex;
+    display:-webkit-flex;  			/* tomorrow & only for body */
+    height:100%;					/* today & tomorrow */
+    width:100%;						/* today only */
+    margin:0;}
+body {
+    display:table-cell;				/* today */
+    vertical-align:middle;			/* today, no need tomorrow */
+    display:-webkit-flex;
+    display:flex;					/* tomorrow */
+
+
+    color:#fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size:.85em;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    /* fallback */
+    min-width:100%;
+    background-color: #2F2727;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));
+
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+
+    /* Firefox 3.6+ */
+    background: -moz-radial-gradient(circle, #1a82f7, #2F2727);
+
+    /* IE 10 */
+    background: -ms-radial-gradient(circle, #1a82f7, #2F2727);
+
+    /* Opera couldn't do radial gradients, then at some point they started supporting the -webkit- syntax, how it kinda does but it's kinda broken (doesn't do sizing) */
+}
+content {
+    margin:auto;				/* today & tomorow */
+    display:table;
+}
+someone {
+    display:block;
+    text-align:left;
+    min-height: 130px;
+}
+someone#frederic
+{
+    text-align:right;
+}
+someone img
+{
+    position: fixed;
+    margin-top: 15px;
+    border-radius: 80px;
+    height: 90px;
+    width: 90px;
+}
+someone#frederic img {
+    margin-left: -90px;
+}
+someone div {
+    padding: 0 0 0 98px;
+}
+someone#frederic div {
+    padding: 0 98px 0 0;
+}
+someone h2 {
+    margin: 0;
+    padding: 0;
+    font-size:1.5em;
+}
+someone ul {
+    margin: 0;
+    padding:0
+}
+someone li {
+    display:block;
+    width: 150px;
+    padding: 0 10px;
+    margin: 0 5px 3px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    font-size: .9em;
+    line-height: 200%;
+}
+someone li:hover, someone li:hover a {
+    background-color: #fff;
+    color:#2F2727;
+}
+someone span.fa {
+    width:15px;
+    font-size: 1.1em;
+}
+someone li a {
+    padding: 0 5px;
+    color:#fff;
+    text-decoration: none;
+    display: block;
+}
+someone li a strong {
+    margin-left: 5px;
+}
