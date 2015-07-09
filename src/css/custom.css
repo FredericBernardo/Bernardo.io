@@ -82,16 +82,18 @@ someone ul {
 }
 someone li {
     display:block;
-    width: 150px;
+    width: 100px;
     padding: 0 10px;
     margin: 0 5px 3px;
-    border: 1px solid rgba(255, 255, 255, .2);
     font-size: .9em;
     line-height: 200%;
 }
+someone#frederic li {
+    margin-left: 50px
+}
 someone li:hover, someone li:hover a {
     background-color: #fff;
-    color:#2F2727;
+    color:#0066CC;
 }
 someone span.fa {
     width:15px;
